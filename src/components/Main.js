@@ -80,6 +80,51 @@ class Main extends React.Component {
         </article>
 
         <article
+          id="intro"
+          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Skills</h2>
+          <h2 className='skillsbd'>Languages</h2>
+          <div className='skills'>
+          <p>JavaScript</p> <span className='icon fa-circle'></span>
+          <p>HTML5</p><span className='icon fa-circle'></span>
+          <p>CSS3</p>
+          </div>
+          <h2 className='skillsbd'>Frameworks & Libraries</h2>
+          <div className='skills'>
+          <p>React</p><span className='icon fa-circle'></span>
+          <p>Node.js</p><span className='icon fa-circle'></span>
+          <p>Express.js</p><span className='icon fa-circle'></span>
+          <p>Massive.js</p><span className='icon fa-circle'></span>
+          <p>Redux.js</p><span className='icon fa-circle'></span>
+          <p>React Redux</p><span className='icon fa-circle'></span>
+          <p>Jest</p><span className='icon fa-circle'></span>
+          
+          
+          </div>
+          <h2 className='skillsbd'>Databases</h2>
+          <div className='skills'>
+          <p>PostgreSQL</p><span className='icon fa-circle'></span>
+          </div>
+
+          <h2 className='skillsbd'>Extra Technologies</h2>
+          <div className='skills'>
+          <p>Gatsby.js</p><span className='icon fa-circle'></span>
+          <p>Axios</p><span className='icon fa-circle'></span>
+          <p>Bcrypt</p><span className='icon fa-circle'></span>
+          <p>Postman</p><span className='icon fa-circle'></span>
+          
+          
+          <p>Git</p><span className='icon fa-circle'></span>
+          <p>Netlify</p>
+          </div>
+          {close}
+        </article>
+
+        <article
           id="contact"
           className={`${this.props.article === 'contact' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
